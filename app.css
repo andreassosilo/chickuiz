@@ -20,7 +20,7 @@ h4 {
 
 h1 {
   font-size: 5.4rem;
-  color: #56a5eb;
+  color: #ffffff;
   margin-bottom: 5rem;
 }
 
@@ -38,4 +38,14 @@ h2 {
 h3 {
   font-size: 2.8rem;
   font-weight: 500;
+}
+
+/* ICON UTILITIES */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
