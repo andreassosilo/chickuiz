@@ -11,6 +11,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 // Set max score to be displayed
 const maxHighScores = 5
 
+// Set the finalScore display to the mostRecentScore from local storage
 finalScore.innerText = mostRecentScore
 
 username.addEventListener('keyup', () => {
@@ -35,8 +36,8 @@ function saveHighScore (e) {
     return b.score - a.score
   })
 
-  // Cut the array and take only 5 best scorers
-  highScores.splice(5)
+  // Cut the array and take only 5 best scorers -> maxHighScores
+  highScores.splice(maxHighScores)
 
   // Update local storage
   localStorage.setItem('highScores', JSON.stringify(highScores))
