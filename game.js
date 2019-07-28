@@ -2,6 +2,10 @@
 const question = document.getElementById('question')
 const choices = Array.from(document.getElementsByClassName('choice-text'))
 
+// Get value for questionCounter
+const questionCounterText = document.getElementById('questionCounter')
+const scoreText = document.getElementById('score')
+
 let currentQuestion = {}
 let acceptingAnswers = false
 let score = 0
@@ -119,6 +123,8 @@ function getNewQuestion () {
     return window.location.assign('/end.html')
   }
   questionCounter++
+  // Display questionCounter in HUD
+  questionCounterText.innerText = `${questionCounter}/${maxQuestions}`
   // To make the questions randomize
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
   currentQuestion = availableQuestions[questionIndex]
@@ -144,6 +150,11 @@ choices.forEach(choice => {
     // If the selected answer is correct, return message
     const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
+    // Add score according to the answer using if-else conditional
+    if (classToApply === 'correct') {
+      incrementScore(correctBonus)
+    }
+
     // Add class to the button
     selectedChoice.parentElement.classList.add(classToApply)
 
@@ -156,6 +167,11 @@ choices.forEach(choice => {
     }, 1000)
   })
 })
+
+function incrementScore (num) {
+  score += num
+  scoreText.innerText = score
+}
 
 // Start the quiz app
 startGame()
