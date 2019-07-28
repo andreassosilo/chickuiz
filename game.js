@@ -109,7 +109,6 @@ function startGame () {
   questionCounter = 0
   score = 0
   availableQuestions = [...questions]
-  console.log(availableQuestions)
   getNewQuestion()
 }
 
@@ -142,9 +141,19 @@ choices.forEach(choice => {
 
     const selectedChoice = e.target
     const selectedAnswer = selectedChoice.dataset['number']
-    console.log(selectedAnswer)
-    // After we answered the question, load a new question
-    getNewQuestion()
+    // If the selected answer is correct, return message
+    const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+    // Add class to the button
+    selectedChoice.parentElement.classList.add(classToApply)
+
+    // Set time to give a delay before we remove that class
+    setTimeout(() => {
+      // Remove the class after we are done
+      selectedChoice.parentElement.classList.remove(classToApply)
+      // After we answered the question, load a new question
+      getNewQuestion()
+    }, 1000)
   })
 })
 

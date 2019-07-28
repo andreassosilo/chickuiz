@@ -25,3 +25,11 @@
   width: 100%;
   color: #273442;
 }
+
+.correct {
+  background-color: #68feb8;
+}
+
+.incorrect {
+  background-color: #ff5757;
+}
