@@ -122,6 +122,8 @@ function startGame () {
 function getNewQuestion () {
   // If there is no more question in the array or we have used max counter, stop the game
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+    // Save the score to local storage
+    localStorage.setItem('mostRecentScore', score)
     // Go to the end page
     return window.location.assign('/end.html')
   }
