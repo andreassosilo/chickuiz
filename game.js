@@ -3,8 +3,11 @@ const question = document.getElementById('question')
 const choices = Array.from(document.getElementsByClassName('choice-text'))
 
 // Get value for questionCounter
-const questionCounterText = document.getElementById('questionCounter')
+const progressText = document.getElementById('progressText')
 const scoreText = document.getElementById('score')
+
+// Get value for progressBar
+const progressBarFull = document.getElementById('progressBarFull')
 
 let currentQuestion = {}
 let acceptingAnswers = false
@@ -124,7 +127,11 @@ function getNewQuestion () {
   }
   questionCounter++
   // Display questionCounter in HUD
-  questionCounterText.innerText = `${questionCounter}/${maxQuestions}`
+  progressText.innerText = `Question ${questionCounter}/${maxQuestions}`
+
+  // Update the progress bar
+  progressBarFull.style.width = `${(questionCounter / maxQuestions) * 100}%`
+
   // To make the questions randomize
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
   currentQuestion = availableQuestions[questionIndex]

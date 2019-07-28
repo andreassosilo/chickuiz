@@ -50,3 +50,17 @@
 .hud-main-text {
   text-align: center;
 }
+
+/* Add progress bar to HUD */
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #ffffff;
+  margin-top: 1.1rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #ffffff;
+  width: 50%;
+}
