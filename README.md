@@ -14,4 +14,5 @@ https://andreassosilo.github.io/chickuiz/
 
 ### How to Play
 - Answer 10 questions by clicking the button of the multiple choices.
-- For every correct answer, you will get 10 points (max. 100 points)
+- For every correct answer, you will get 10 points.
+- At the end of the game, your accumulated score will be displayed on the result display.
