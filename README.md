@@ -15,4 +15,5 @@ https://andreassosilo.github.io/chickuiz/
 ### How to Play
 - Answer 10 questions by clicking the button of the multiple choices.
 - For every correct answer, you will get 10 points.
+- There will be a timer of 5 seconds per question. Make sure to answer within the time limit!
 - At the end of the game, your accumulated score will be displayed on the result display.
