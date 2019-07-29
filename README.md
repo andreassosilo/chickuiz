@@ -12,3 +12,6 @@ https://andreassosilo.github.io/chickuiz/
 ![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz4.png "End Page")
 ![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz5.png "Highest Scores")
 
+### How to Play
+- Answer 10 questions by clicking the button of the multiple choices.
+- For every correct answer, you will get 10 points (max. 100 points)
