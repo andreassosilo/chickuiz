@@ -7,8 +7,8 @@ A quiz is a form of game or mind sport, in which the players (as individuals or 
 https://andreassosilo.github.io/chickuiz/
 
 ![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz.png "Chickuiz Home")
-![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz3.png "Chickuiz Form")
-![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz2.png "Chickuiz Gameplay")
+![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz3.png "Chickuiz Gameplay")
+![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz2.png "Chickuiz Game")
 ![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz4.png "End Page")
 ![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz5.png "Highest Scores")
 
