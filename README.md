@@ -4,7 +4,7 @@ Build a quiz web app for final project phase 0 at Hacktiv8 Coding Bootcamp
 
 A quiz is a form of game or mind sport, in which the players (as individuals or in teams) attempt to answer questions correctly. It is a game to test your knowledge about a certain subject.
 
-:baby_chick:[**Play The Game**] https://andreassosilo.github.io/chickuiz/
+[**Play The Game] https://andreassosilo.github.io/chickuiz/ :baby_chick:**
 
 ![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz.png "Chickuiz Home")
 ![alt text](https://github.com/andreassosilo/chickuiz/blob/master/assets/chickuiz3.png "Chickuiz Gameplay")
