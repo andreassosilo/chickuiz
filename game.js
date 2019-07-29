@@ -125,7 +125,7 @@ function getNewQuestion () {
     // Save the score to local storage
     localStorage.setItem('mostRecentScore', score)
     // Go to the end page
-    return window.location.assign('/end.html')
+    return window.location.assign('end.html')
   }
   questionCounter++
   // Display questionCounter in HUD
