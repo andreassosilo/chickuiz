@@ -56,6 +56,7 @@ h4 {
   max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
+  margin-top: -50px;
 }
 
 .container > * {
@@ -152,4 +153,15 @@ input::placeholder {
 .explanation {
   padding: 0.8rem 0.5rem;
   margin-left: 3.2rem;
+}
+
+/* Upper left logo */
+.upper-left-logo {
+  position: relative;
+  margin: 10px 0px 0px 10px;
+}
+
+/* End game result title */
+h1 .result-title {
+  margin-bottom: 1rem;
 }

@@ -12,7 +12,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 const maxHighScores = 5
 
 // Set the finalScore display to the mostRecentScore from local storage
-finalScore.innerText = mostRecentScore
+finalScore.innerText = `${mostRecentScore} points`
 
 username.addEventListener('keyup', () => {
   saveScoreBtn.disabled = !username.value
