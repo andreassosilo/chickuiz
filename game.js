@@ -9,11 +9,18 @@ const scoreText = document.getElementById('score')
 // Get value for progressBar
 const progressBarFull = document.getElementById('progressBarFull')
 
+// Get value for timer counter
+const timerCounter = document.getElementById('timerCounter')
+
 let currentQuestion = {}
 let acceptingAnswers = false
 let score = 0
 let questionCounter = 0
 let availableQuestions = []
+
+// Variables for counter render
+let questionTime = 5 // 5 secs for every question
+let timer = null
 
 let questions = [
   {
@@ -116,12 +123,16 @@ function startGame () {
   questionCounter = 0
   score = 0
   availableQuestions = [...questions]
+  counterRender()
+  timer = setInterval(counterRender, 1000)
   getNewQuestion()
 }
 
 function getNewQuestion () {
   // If there is no more question in the array or we have used max counter, stop the game
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+    // Clear interval of the timer
+    clearInterval(timer)
     // Save the score to local storage
     localStorage.setItem('mostRecentScore', score)
     // Go to the end page
@@ -133,6 +144,9 @@ function getNewQuestion () {
 
   // Update the progress bar
   progressBarFull.style.width = `${(questionCounter / maxQuestions) * 100}%`
+
+  // Set the counterTimer to 5s again
+  questionTime = 5
 
   // To make the questions randomize
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
@@ -157,7 +171,7 @@ choices.forEach(choice => {
     const selectedChoice = e.target
     const selectedAnswer = selectedChoice.dataset['number']
     // If the selected answer is correct, return message
-    const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+    const classToApply = Number(selectedAnswer) === Number(currentQuestion.answer) ? 'correct' : 'incorrect'
 
     // Add score according to the answer using if-else conditional
     if (classToApply === 'correct') {
@@ -180,6 +194,16 @@ choices.forEach(choice => {
 function incrementScore (num) {
   score += num
   scoreText.innerText = score
+}
+
+function counterRender () {
+  if (questionTime >= 0) {
+    timerCounter.innerHTML = `${questionTime} s`
+    questionTime--
+  } else {
+    questionTime = 5
+    getNewQuestion()
+  }
 }
 
 // Start the quiz app
