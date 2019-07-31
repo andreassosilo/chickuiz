@@ -40,6 +40,11 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
 /* ICON UTILITIES */
 
 .container {
@@ -91,6 +96,7 @@ h3 {
   text-decoration: none;
   color: #273442;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .btn:hover {
