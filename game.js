@@ -198,7 +198,7 @@ function incrementScore (num) {
 
 function counterRender () {
   if (questionTime >= 0) {
-    timerCounter.innerHTML = `${questionTime} s`
+    timerCounter.innerHTML = `${questionTime}s`
     questionTime--
   } else {
     questionTime = 5
