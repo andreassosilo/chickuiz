@@ -129,8 +129,27 @@ input {
   border: none;
   box-shadow: 0 0.1rem 1.4rem 0 rgba(255, 255, 255, 0.5);
   color: #273442;
+  border-radius: 10px;
 }
 
 input::placeholder {
   color: #aaaaaa;
+}
+
+/* Gameplay */
+
+#gameplay {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+}
+
+#gameplaytitle {
+  font-size: 3.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.explanation {
+  padding: 0.8rem 0.5rem;
+  margin-left: 3.2rem;
 }
