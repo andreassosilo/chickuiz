@@ -17,8 +17,8 @@ const maxHighScores = 5
 finalScore.innerText = `${mostRecentScore} points`
 
 // Choose image based on score
-let img = (mostRecentScore > 90) ? '/chickuiz/assets/fullHeadedChicken.png'
-  : (mostRecentScore > 40) ? '/chickuiz/assets/happyChick.png' : '/chickuiz/assets/noobEgg.png'
+let img = (mostRecentScore > 90) ? '/assets/fullHeadedChicken.png'
+  : (mostRecentScore > 40) ? '/assets/happyChick.png' : '/assets/noobEgg.png'
 
 scoreImage.innerHTML = `<img src="${img}" width = 100>`
 
