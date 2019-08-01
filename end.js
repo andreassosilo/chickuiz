@@ -1,6 +1,8 @@
 const username = document.getElementById('username')
 const saveScoreBtn = document.getElementById('saveScoreBtn')
 const finalScore = document.getElementById('finalScore')
+const scoreImage = document.getElementById('scoreImage')
+const yourRank = document.getElementById('yourRank')
 
 // Get the final result score from local storage
 const mostRecentScore = localStorage.getItem('mostRecentScore')
@@ -14,6 +16,19 @@ const maxHighScores = 5
 // Set the finalScore display to the mostRecentScore from local storage
 finalScore.innerText = `${mostRecentScore} points`
 
+// Choose image based on score
+let img = (mostRecentScore > 90) ? '/chickuiz/assets/fullHeadedChicken.png'
+  : (mostRecentScore > 40) ? '/chickuiz/assets/happyChick.png' : '/chickuiz/assets/noobEgg.png'
+
+scoreImage.innerHTML = `<img src="${img}" width = 100>`
+
+// Display rank based on score
+let rank = (mostRecentScore > 90) ? 'Full Headed Chicken'
+  : (mostRecentScore > 40) ? 'Happy Chick' : 'Noob Egg'
+
+yourRank.innerText = `Your Rank: ${rank}`
+
+// If user not yet input the
 username.addEventListener('keyup', () => {
   saveScoreBtn.disabled = !username.value
 })

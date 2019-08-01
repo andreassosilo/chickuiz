@@ -15,13 +15,15 @@
     <div class="container">
         <div id="end" class="flex-center flex-column">
             <h1 id="finalScore"></h1>
+            <h3>Result</h3>
+            <div id="scoreImage"></div>
+            <h4 id="yourRank"></h4>
             <form>
                 <input type="text" name="username" id="username" placeholder="username">
-                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)"
-                    disabled>Save</button>
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save & Go
+                    Home</button>
             </form>
             <a class="btn" href="game.html">Play Again</a>
-            <a class="btn" href="index.html">Go Home</a>
         </div>
     </div>
     <script src="end.js"></script>
