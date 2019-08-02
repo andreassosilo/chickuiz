@@ -120,12 +120,12 @@ const correctBonus = 10
 const maxQuestions = 10
 
 // Create audio background during gameplay
-let audio = new Audio()
-audio.src = '/chickuiz/audio/background.ogg'
+let bgm = new Audio()
+bgm.src = '/chickuiz/audio/background.ogg'
 
 function startGame () {
   // Play background music
-  audio.play()
+  bgm.play()
   // Set up everything to default
   questionCounter = 0
   score = 0
