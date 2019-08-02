@@ -122,6 +122,7 @@ const maxQuestions = 10
 // Create audio background during gameplay
 let bgm = new Audio()
 bgm.src = '/chickuiz/audio/background.ogg'
+bgm.loop = true
 
 function startGame () {
   // Play background music
