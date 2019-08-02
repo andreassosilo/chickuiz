@@ -124,6 +124,12 @@ let bgm = new Audio()
 bgm.src = '/chickuiz/audio/background.ogg'
 bgm.loop = true
 
+// Create correct & incorrect sound
+let correct = new Audio()
+correct.src = '/chickuiz/audio/correct.ogg'
+let incorrect = new Audio()
+incorrect.src = '/chickuiz/audio/incorrect.ogg'
+
 function startGame () {
   // Play background music
   bgm.play()
@@ -184,6 +190,9 @@ choices.forEach(choice => {
     // Add score according to the answer using if-else conditional
     if (classToApply === 'correct') {
       incrementScore(correctBonus)
+      correct.play()
+    } else {
+      incorrect.play()
     }
 
     // Add class to the button
