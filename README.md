@@ -2,7 +2,7 @@
 
 Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hacktiv8 Coding Bootcamp
 
-*Chickuiz* is a form of game or mind sport, in which the player attempt to answer questions correctly. It is a game to test your knowledge about general knowledge subject.
+**Chickuiz** is a form of game or mind sport, in which the player attempt to answer questions correctly. It is a game to test your knowledge about general knowledge subject.
 
 :baby_chick: [**Play The Game**] **https://andreassosilo.github.io/chickuiz/**
 
