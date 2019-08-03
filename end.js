@@ -1,5 +1,6 @@
 const username = document.getElementById('username')
-const saveScoreBtn = document.getElementById('saveScoreBtn')
+const saveScoreHomeBtn = document.getElementById('saveScoreHomeBtn')
+const saveScoreReplayBtn = document.getElementById('saveScoreReplayBtn')
 const finalScore = document.getElementById('finalScore')
 const scoreImage = document.getElementById('scoreImage')
 const yourRank = document.getElementById('yourRank')
@@ -28,9 +29,13 @@ let rank = (mostRecentScore > 90) ? 'Full Headed Chicken'
 
 yourRank.innerText = `Your Rank: ${rank}`
 
-// If user not yet input the
+// If user not yet input the character
 username.addEventListener('keyup', () => {
-  saveScoreBtn.disabled = !username.value
+  saveScoreHomeBtn.disabled = !username.value
+})
+
+username.addEventListener('keyup', () => {
+  saveScoreReplayBtn.disabled = !username.value
 })
 
 function saveHighScore (e) {
