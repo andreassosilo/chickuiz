@@ -61,5 +61,11 @@ function saveHighScore (e) {
 
   // Update local storage
   localStorage.setItem('highScores', JSON.stringify(highScores))
-  window.location.assign('index.html')
+  // Go to the index.html or game.html
+  let btnValue = document.getElementById(e.id).value
+  if (btnValue === 'home') {
+    window.location.assign('index.html')
+  } else if (btnValue === 'replay') {
+    window.location.assign('game.html')
+  }
 }
