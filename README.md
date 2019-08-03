@@ -1,8 +1,8 @@
-# Chickuiz - Quiz App with HTML, CSS, and JavaScript
+# Chickuiz - Quiz App with HTML, CSS, and Vanilla JavaScript
 
 Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hacktiv8 Coding Bootcamp
 
-A quiz is a form of game or mind sport, in which the players (as individuals or in teams) attempt to answer questions correctly. It is a game to test your knowledge about a certain subject.
+*Chickuiz* is a form of game or mind sport, in which the player attempt to answer questions correctly. It is a game to test your knowledge about general knowledge subject.
 
 :baby_chick: [**Play The Game**] **https://andreassosilo.github.io/chickuiz/**
 
