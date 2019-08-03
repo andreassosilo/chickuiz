@@ -43,4 +43,16 @@
     </div>
 </body>
 
+<script>
+    // Progressive Web App: Register service worker.
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/chickuiz/service-worker.js')
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                });
+        });
+    }
+</script>
+
 </html>
