@@ -1,4 +1,4 @@
-# Chickuiz - Quiz App with HTML, CSS, and Vanilla JavaScript
+# Chickuiz - Quiz App with HTML, CSS, and JavaScript
 
 Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hacktiv8 Coding Bootcamp
 
