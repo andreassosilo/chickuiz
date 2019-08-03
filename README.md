@@ -1,11 +1,6 @@
 # Chickuiz - Quiz App with HTML, CSS, and JavaScript
 
-A quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hacktiv8 Coding Bootcamp
-
-### Build using:
-HTML5
-CSS3
-Vanilla JavaScript
+Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hacktiv8 Coding Bootcamp
 
 A quiz is a form of game or mind sport, in which the players (as individuals or in teams) attempt to answer questions correctly. It is a game to test your knowledge about a certain subject.
 
@@ -22,3 +17,8 @@ A quiz is a form of game or mind sport, in which the players (as individuals or 
 - For every correct answer, you will get 10 points.
 - There will be a timer of 5 seconds per question. Make sure to answer within the time limit!
 - At the end of the game, your accumulated score will be displayed on the result display.
+
+### Build using:
+- HTML5
+- CSS3
+- Vanilla JavaScript
