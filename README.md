@@ -18,6 +18,11 @@ Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hack
 - There will be a timer of 5 seconds per question. Make sure to answer within the time limit!
 - At the end of the game, your accumulated score will be displayed on the result display.
 
+### Scores & Rank
+- :hatching_chick: 0-40 points
+- :hatched_chick: 50-90 points
+- :chicken: 100 points (highest)
+
 ### Build using:
 - HTML5
 - CSS3
