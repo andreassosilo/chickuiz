@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Congrats!</title>
+    <link rel="icon" href="/chickuiz/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="game.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -19,11 +20,13 @@
             <div id="scoreImage"></div>
             <h4 id="yourRank"></h4>
             <form>
-                <input type="text" name="username" id="username" placeholder="username">
-                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save & Go
+                <input type="text" name="username" id="username" placeholder="username" required>
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)">Go
                     Home</button>
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" href="game.html">Play
+                    Again</button>
             </form>
-            <a class="btn" href="game.html">Play Again</a>
+            <a class="btn"></a>
         </div>
     </div>
     <script src="end.js"></script>
