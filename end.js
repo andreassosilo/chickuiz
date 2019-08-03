@@ -1,6 +1,5 @@
 const username = document.getElementById('username')
-const saveScoreHomeBtn = document.getElementById('saveScoreHomeBtn')
-const saveScoreReplayBtn = document.getElementById('saveScoreReplayBtn')
+const saveScoreBtn = document.getElementById('saveScoreBtn')
 const finalScore = document.getElementById('finalScore')
 const scoreImage = document.getElementById('scoreImage')
 const yourRank = document.getElementById('yourRank')
@@ -29,13 +28,9 @@ let rank = (mostRecentScore > 90) ? 'Full Headed Chicken'
 
 yourRank.innerText = `Your Rank: ${rank}`
 
-// If user not yet input the character
+// If user not yet input the character, disabled the button
 username.addEventListener('keyup', () => {
-  saveScoreHomeBtn.disabled = !username.value
-})
-
-username.addEventListener('keyup', () => {
-  saveScoreReplayBtn.disabled = !username.value
+  saveScoreBtn.disabled = !username.value
 })
 
 function saveHighScore (e) {
@@ -61,11 +56,5 @@ function saveHighScore (e) {
 
   // Update local storage
   localStorage.setItem('highScores', JSON.stringify(highScores))
-  // Go to the index.html or game.html
-  let btnValue = document.getElementById(e.id).value
-  if (btnValue === 'home') {
-    window.location.assign('index.html')
-  } else if (btnValue === 'replay') {
-    window.location.assign('game.html')
-  }
+  window.location.assign('index.html')
 }
