@@ -19,9 +19,9 @@ Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hack
 - At the end of the game, your accumulated score will be displayed on the result display.
 
 ### Scores & Rank
-- :hatching_chick: 0-40 points
-- :hatched_chick: 50-90 points
-- :chicken: 100 points (highest)
+- :hatching_chick: [**Noob Egg**] 0-40 points
+- :hatched_chick: [**Happy Chick**] 50-90 points
+- :chicken: 100 [**Full Headed Chicken**] points (highest)
 
 ### Build using:
 - HTML5
