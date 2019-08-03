@@ -21,7 +21,7 @@ Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hack
 ### Scores & Rank
 - :hatching_chick: [**Noob Egg**] 0-40 points
 - :hatched_chick: [**Happy Chick**] 50-90 points
-- :chicken: [**Full Headed Chicken**] 100 points (highest)
+- :chicken: [**Full Headed Chicken**] 100 points (__highest__)
 
 ### Build using:
 - HTML5
