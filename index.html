@@ -49,10 +49,10 @@
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('/chickuiz/service-worker.js').then(function (registration) {
                 // Registration was successful
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                console.log('Service worker registration successful with scope: ', registration.scope);
             }, function (err) {
                 // Registration was failed
-                console.log('ServiceWorker registration failed: ', err);
+                console.log('Service worker registration failed: ', err);
             });
         });
     } else {
