@@ -35,6 +35,6 @@
   ],
   "start_url": "/chickuiz/index.html",
   "display": "standalone",
-  "background_color": "#273442",
-  "theme_color": "#ffffff"
+  "background_color": "#ffffff",
+  "theme_color": "#273442"
 }
