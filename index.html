@@ -46,12 +46,18 @@
 <script>
     // Progressive Web App: Register service worker.
     if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/chickuiz/service-worker.js')
-                .then((reg) => {
-                    console.log('Service worker registered.', reg);
-                });
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/chickuiz/service-worker.js').then(function (registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function (err) {
+                // Registration was failed
+                console.log('ServiceWorker registration failed: ', err);
+            });
         });
+    } else {
+        console.log('Service worker is not supported!')
+        return;
     }
 </script>
 
