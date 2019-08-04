@@ -48,7 +48,7 @@ let questions = [
     answer: 1
   },
   {
-    question: 'Where is Mount Kilimanjaro',
+    question: 'Where is Mount Kilimanjaro?',
     choice1: 'Kenya',
     choice2: 'Tanzania',
     answer: 2
@@ -166,6 +166,7 @@ function getNewQuestion () {
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
   currentQuestion = availableQuestions[questionIndex]
   question.innerText = currentQuestion.question
+
   // Get the choices for that selected question
   choices.forEach(choice => {
     const number = choice.dataset['number']
