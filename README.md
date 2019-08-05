@@ -28,5 +28,5 @@ Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hack
 - CSS3
 - Vanilla JavaScript
 
-### License:
+### License
 - [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
