@@ -2,7 +2,7 @@
 
 Develop a quiz web app for final project phase 0 - batch 34 (Humble Fox) at Hacktiv8 Coding Bootcamp
 
-**Chickuiz** is a quiz app, where the player attempt to answer questions correctly. It is a game to test your skill about general knowledge subject.
+**Chickuiz** is a quiz app, where the player attempt to answer questions correctly. It is a game to test your skill in general knowledge subject.
 
 :baby_chick: [**Play The Game**] **https://andreassosilo.github.io/chickuiz/**
 
