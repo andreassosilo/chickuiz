@@ -8,7 +8,6 @@
     <title>Chickuiz | Quiz App</title>
     <meta name="keywords" content="HTML, CSS, JavaScript, Quiz, Andreas, Sosilo, Web, Apps, Hacktiv8">
     <!-- SEO: Add description here -->
-    <meta name="description" content="Chickuiz | Quiz App" />
     <meta name="author" content="Andreas Sosilo">
     <meta name="title" property="og:title" content="Chickuiz - General Knowledge Quiz App">
     <meta property="og:type" content="Website">
@@ -41,21 +40,21 @@
             <a class="btn" href="gameplay.html">How to Play</a>
         </div>
     </div>
-</body>
-
-<script>
-    // Progressive Web App: Register service worker.
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/chickuiz/service-worker.js').then(function (registration) {
-                // Registration was successful
-                console.log('Service worker registration successful with scope: ', registration.scope);
-            }, function (err) {
-                // Registration was failed
-                console.log('Service worker registration failed: ', err);
+    <script>
+        // Progressive Web App: Register service worker.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/chickuiz/service-worker.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('Service worker registration successful with scope: ', registration
+                        .scope);
+                }, function (err) {
+                    // Registration was failed
+                    console.log('Service worker registration failed: ', err);
+                });
             });
-        });
-    }
-</script>
+        }
+    </script>
+</body>
 
 </html>
